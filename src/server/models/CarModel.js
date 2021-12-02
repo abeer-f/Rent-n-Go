@@ -17,15 +17,10 @@ const carSchema = new Schema({
   vehicleExample: { type: String, required: true },
   peopleCapacity: { type: Number, required: true },
   bagCapacity: { type: Number, required: true },
-  currencyCode: { type: String, required: true },
+  airportName: { type: String, required: false },
   ratePlan: { type: String, required: true },
   dailyPrice: { type: Number, required: true },
-  totalPrice: { type: Number, required: true },
-  addressLine1: { type: String, required: true },
-  street: { type: String, required: true },
-  city: { type: String, required: true },
-  zipCode: { type: String, required: true },
-  carLicense: { type: Number, required: true },
+  totalPrice: { type: Number, required: true }
 });
 const Car = mongoose.model('car', carSchema);
 module.exports = Car;
