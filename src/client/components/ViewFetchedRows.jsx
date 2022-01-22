@@ -1,17 +1,12 @@
-import React, { useEffect } from 'react';
-
+import React from "react";
 
 const ViewFetchedRows = (props) => {
-  useEffect(() => {
-console.log('props', props);
-  }, []);
   const { data } = props;
   return (
-    <tr className = "carCard">
-  
+    <tr className="carCard">
       <td>{data.description}</td>
       <td>{data.vehicleExample}</td>
-     <td>{data.peopleCapacity}</td>
+      <td>{data.peopleCapacity}</td>
       <td>{data.bagCapacity}</td>
       <td>{data.currencyCode}</td>
       <td>{data.ratePlan}</td>
@@ -22,7 +17,6 @@ console.log('props', props);
       <td>{data.street}</td>
       <td>{data.city}</td>
       <td>{data.addressLine1}</td>
-
     </tr>
   );
 };

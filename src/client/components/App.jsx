@@ -1,15 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import LandingPage from './LandingPage.jsx';
 import '../styles.scss';
 const App =  () => {
-
- 
-    return (
-      
+    return (  
   <LandingPage />
-    
     );
-  
 }
 
 export default App;

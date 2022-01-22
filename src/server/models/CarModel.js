@@ -1,14 +1,15 @@
 const mongoose = require('mongoose');
-const MONGO_URI = 'mongodb+srv://abeer-f:abc@starwars.qfda0.mongodb.net/starwars?retryWrites=true&w=majority';
+const MONGO_URI = 'mongodb+srv://<DB_NAME>:<DB_PASSWORD>@<DB_NAME>.qfda0.mongodb.net/starwars?retryWrites=true&w=majority';
+
 mongoose.connect(MONGO_URI, {
   // options for the connect method to parse the URI
   useNewUrlParser: true,
   useUnifiedTopology: true,
   // sets the name of the DB that our collections are part of
-  dbName: 'starwars'
+  dbName:'<DB_NAME>'
 })
   .then(() => console.log('Connected to Mongo DB.'))
-  .catch(err => console.log(err));
+  .catch(err => console.error(err));
 
 const Schema = mongoose.Schema;
 

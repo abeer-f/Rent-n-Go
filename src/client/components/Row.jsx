@@ -1,10 +1,7 @@
-import React, { useEffect } from 'react';
-
+import React from 'react';
 
 const Row = (props) => {
-
   let { data,handleSubmit, location = "" } = props;
-
   return (
     <tr className="carCard">
       <td><img className="imageClass" src={data.vehicleInfo.images.SIZE67X36} alt="" /></td>

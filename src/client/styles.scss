@@ -1,14 +1,13 @@
 .carCard {
- 
-    background-color:lightgray;
- 
-    border: 1px solid rgb(0, 0, 0);
-    margin: 5px;
-    color: black;
-  }
-  tr{
-      margin:5px;
-  }
+  background-color: lightgray;
+
+  border: 1px solid rgb(0, 0, 0);
+  margin: 5px;
+  color: black;
+}
+tr {
+  margin: 5px;
+}
 /* reset default styles */
 *,
 *:before,
@@ -24,14 +23,13 @@
 
 html {
   box-sizing: border-box;
-  font: 62.5% 'Source Sans Pro', sans-serif;
+  font: 62.5% "Source Sans Pro", sans-serif;
 }
-
 
 body {
   margin: 0px;
   line-height: 1.3;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 a {
@@ -50,7 +48,7 @@ h3 {
   font-size: 1.8rem;
 }
 a {
-    color: whitesmoke;  
+  color: whitesmoke;
 }
 a,
 p,
@@ -64,7 +62,6 @@ small {
   font-size: 1.2rem;
 }
 
-
 button {
   border-radius: 0;
   background: transparent;
@@ -74,12 +71,12 @@ button {
 body {
   padding-left: 1rem;
   padding-right: 1rem;
-   background: rgba(22, 22, 22, 0.915);
+  background: rgba(22, 22, 22, 0.915);
   color: #e4e4e4;
 }
-td{
-      padding:15px;
-      margin:10px;
+td {
+  padding: 15px;
+  margin: 10px;
 }
 
 .card {
@@ -322,8 +319,8 @@ td{
     grid-template-columns: repeat(2, 1fr);
   }
 }
-nav{
-      color:rgb(187, 161, 161)
+nav {
+  color: rgb(187, 161, 161);
 }
 /* Normal */
 @media screen and (min-width: 901px) and (max-width: 1200px) {
