@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders ViewCars 1`] = `
+Array [
+  <h1>
+    View Cars Page
+  </h1>,
+  <nav
+    style={
+      Object {
+        "borderBottom": "solid 1px",
+        "color": "white",
+        "marginLeft": "20px",
+        "paddingBottom": "1rem",
+      }
+    }
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Back to Home Page
+    </a>
+  </nav>,
+  <div>
+    <table>
+      <tr>
+        <td>
+          Vehicle Name
+        </td>
+        <td>
+          Vehicle Description
+        </td>
+        <td>
+          People Capacity
+        </td>
+        <td>
+          Bag Capacity
+        </td>
+        <td>
+          Currency Code
+        </td>
+        <td>
+          Rate Plan Type
+        </td>
+        <td>
+          Daily Price
+        </td>
+        <td>
+          Total Price
+        </td>
+        <td>
+          Car License No.
+        </td>
+        <td>
+          Zip Code
+        </td>
+        <td>
+          Street
+        </td>
+        <td>
+          City
+        </td>
+        <td>
+          Address Line 1
+        </td>
+      </tr>
+    </table>
+  </div>,
+]
+`;

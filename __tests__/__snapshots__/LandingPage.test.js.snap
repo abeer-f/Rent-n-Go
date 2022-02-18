@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders LandingPage 1`] = `
+<div>
+  <h1>
+    Car Rental Platform
+  </h1>
+  <nav
+    style={
+      Object {
+        "borderBottom": "solid 1px",
+        "paddingBottom": "1rem",
+      }
+    }
+  >
+    <a
+      href="/view"
+      onClick={[Function]}
+    >
+      View Cars
+    </a>
+  </nav>
+  <label
+    for="location"
+  >
+    Select a Location:
+  </label>
+  <select
+    id="cars"
+    name="location"
+    onChange={[Function]}
+  >
+    <option
+      value="JFK"
+    >
+      -Select-
+    </option>
+    <option
+      value="JFK"
+    >
+      JFK
+    </option>
+    <option
+      value="LGA"
+    >
+      LGA
+    </option>
+  </select>
+  <button
+    onClick={[Function]}
+  >
+    Fetch Airport Location
+  </button>
+  <table>
+    <tr>
+      <td>
+        Vehical Type
+      </td>
+      <td>
+        Vehical Type
+      </td>
+      <td>
+        Vehicle Description
+      </td>
+      <td>
+        People Capacity
+      </td>
+      <td>
+        Bag Capacity
+      </td>
+      <td>
+        Airport Name
+      </td>
+      <td>
+        Rate Plan Type
+      </td>
+      <td>
+        Daily Price
+      </td>
+      <td>
+        Total Price
+      </td>
+    </tr>
+  </table>
+</div>
+`;

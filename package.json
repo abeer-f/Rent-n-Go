@@ -1,20 +1,35 @@
 {
-  "name": "solo",
+  "name": "Rent'n'Go",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__tests__",
+      "\\.(scss|less)$": "<rootDir>/src/client/"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
+  },
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/server/server.js",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "cross-env NODE_ENV=development concurrently \"nodemon src/server/server.js\" \"webpack serve --open --hot\""
+    "dev": "cross-env NODE_ENV=development concurrently \"nodemon src/server/server.js\" \"webpack serve --open --hot\"",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.17.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
     "babel-loader": "^8.2.3",
     "concurrently": "^6.4.0",
     "cross-env": "^7.0.3",
@@ -27,11 +42,13 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "express": "^4.17.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest-environment-jsdom-sixteen": "^2.0.0",
     "mini-css-extract-plugin": "^2.4.5",
     "nodemon": "^2.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",
+    "react-test-renderer": "^17.0.2",
     "sass": "^1.44.0",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",

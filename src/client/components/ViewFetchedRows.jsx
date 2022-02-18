@@ -3,7 +3,7 @@ import React from "react";
 const ViewFetchedRows = (props) => {
   const { data } = props;
   return (
-    <tr className="carCard">
+    <tr className="carCard" data-testid="fetched-rows" >
       <td>{data.description}</td>
       <td>{data.vehicleExample}</td>
       <td>{data.peopleCapacity}</td>

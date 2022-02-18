@@ -10,6 +10,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './build'),
         filename: 'bundle.js',
+        pathinfo:false
     },
     plugins: [new HtmlWebpackPlugin({ template: 'index.html' })],
     module: {
@@ -27,6 +28,10 @@ module.exports = {
                     },
                 },
             },
+            {
+                test: /\.(png|jp(e*)g|svg|gif)$/,
+                use: ["file-loader"],
+              },
             {
                 test: /\.s?[ac]ss$/i,
                 use: ['style-loader', 'css-loader', 'sass-loader'],

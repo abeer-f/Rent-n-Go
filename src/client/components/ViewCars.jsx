@@ -18,7 +18,6 @@ const ViewCars = () => {
 
   return (
     <>
-      <div>
         <h1>View Cars Page</h1>
         <nav
           style={{
@@ -30,7 +29,7 @@ const ViewCars = () => {
         >
           <Link to="/">Back to Home Page</Link>
         </nav>
-      </div>
+
       <div>
         <table>
           <tr>
