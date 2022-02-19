@@ -13,15 +13,5 @@ router.post("/add", CarController.createCar, (req, res) => {
   }
 });
 
-router.get("/get-cars", CarController.getCars, (req, res) => {
-  try {
-    res
-      .status(200)
-      .set("Content-Type", "application/javascript")
-      .json(res.locals.cars);
-  } catch (e) {
-    console.error(e);
-  }
-});
 
 module.exports = router;
